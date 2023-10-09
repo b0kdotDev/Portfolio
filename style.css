@@ -45,10 +45,12 @@ header h2 {
 min-height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 #home .home-text{
     font-size: 50px !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #about {
     padding: 0 50px 0 50px;
@@ -57,4 +59,54 @@ min-height: 100vh;
 #about h1{
     font-size: 100px !important;
 }
-
+.home-image img{
+    border-radius: 50%;
+}
+/* about-section */
+#about {
+    padding: 0 50px 0 50px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+}
+#about-image img {
+    border-radius: 20%;
+    border: 1px solid gray;
+}
+.about-img-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+.about-details-text {
+    width: 60%;
+    margin: 50px 0 0 0;
+}
+.about-details-text h6 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-details-text p{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}

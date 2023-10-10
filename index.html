@@ -5,38 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <h2>MARVIN</h2>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+    <header class="container-fluid w-100 shadow-sm py-3 sticky-top bg-white">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+            <h2 class="fw-bold">MARVIN</h2>
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-md-none">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="">Skills</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+            </div>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-white d-flex">
+                <div class="navbar-menu d-sm-none d-md-flex w-100">
+                    <a href="#home" class="text-decoration-none mx-2">Home</a>
+                    <a href="#about" class="text-decoration-none mx-2">About</a>
+                    <a href="" class="text-decoration-none mx-2">Skills</a>
+                    <a href="" class="text-decoration-none mx-2">Projects</a>
+                    <a href="" class="text-decoration-none mx-2">Contact</a>
+                </div>
+                <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
         </nav>
+    </div>
     </header>
-    <section id="home">
-        <div class="home-text">
-            <h1>Hi</h1>
-            <h1>I'm Marvin</h1>
-            <h1>Web Designer</h1>
+    <section id="home"
+        class="container-fluid w-100 px-5 d-flex flex-row align-items-center justify-content-between min-vh-100">
+        <div class="home-text fw-bolder w-50 d-flex flex-column">
+            <p>Hi</p>
+            <p>I'm Marvin</p>
+            <p>Web Designer</p>
         </div>
         <div class="home-image">
-            <img src="img/bok.jpg" alt="">
+            <img src="img/blob.png" class="img_1" alt="">
         </div>
     </section>
     <section id="about">
         <div id="about-text">
-            <h6>About</h6>
+            <h6 class="fw-bold">About</h6>
         </div>
         <div class="about-img-text-container">
-            <div id="about-image"><img src="img/bok.jpg" alt=""></div>
+            <div id="about-image"><img class="rounded-4 shadow" src="img/marvin.png" alt=""></div>
             <div class="about-details-text">
-                <h6>Im Marvin</h6>
+                <h3>I'm Marvin</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aperiam iste neque culpa at laudantium
                     soluta exercitationem ex iusto obcaecati tempora hic, sed unde nisi eaque delectus minus odit rem ratione
                     rerum autem provident deleniti sapiente! Pariatur id repellat sed.</p>
@@ -50,11 +73,12 @@
 
     </section>
     <section id="home">
-
+        
     </section>
     <footer>
 
     </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

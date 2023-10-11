@@ -126,3 +126,16 @@ min-height: 100vh;
     font-size: 20px;
     text-align: justify;
 }
+/* skills */
+.skill-text h6{
+    font-size: 50px !important;
+    font-family: "Poppins";
+}
+#skills{
+    padding: 0 100px 0 100px !important;
+}
+.skill-paragraph p{
+    text-align: justify;
+    font-family: "Poppins";
+    font-size: 20px;
+}

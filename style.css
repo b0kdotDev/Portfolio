@@ -5,6 +5,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+@font-face{
+    font-family: sitka;
+    src: url(fonts/sitka-small-599.ttf);
+}
 ::-webkit-scrollbar {
     width: 8px;
    

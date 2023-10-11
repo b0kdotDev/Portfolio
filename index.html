@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -23,57 +24,104 @@
                 <div class="offcanvas-body d-md-none">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="">Skills</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
-            </div>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
             <nav class="navbar navbar-expand-lg bg-white d-flex">
                 <div class="navbar-menu d-sm-none d-md-flex w-100">
                     <a href="#home" class="text-decoration-none mx-2">Home</a>
                     <a href="#about" class="text-decoration-none mx-2">About</a>
-                    <a href="" class="text-decoration-none mx-2">Skills</a>
-                    <a href="" class="text-decoration-none mx-2">Projects</a>
-                    <a href="" class="text-decoration-none mx-2">Contact</a>
+                    <a href="#skills" class="text-decoration-none mx-2">Skills</a>
+                    <a href="#projects" class="text-decoration-none mx-2">Projects</a>
+                    <a href="#contact" class="text-decoration-none mx-2">Contact</a>
                 </div>
                 <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
-        </nav>
-    </div>
+            </nav>
+        </div>
     </header>
-    <section id="home"
-        class="container-fluid w-100 px-5 d-flex flex-row align-items-center justify-content-between min-vh-100">
-        <div class="home-text fw-bolder w-50 d-flex flex-column">
-            <p>Hi</p>
-            <p>I'm Marvin</p>
-            <p>Web Designer</p>
-        </div>
-        <div class="home-image">
-            <img src="img/blob.png" class="img_1" alt="">
-        </div>
-    </section>
-    <section id="about">
-        <div id="about-text">
-            <h6 class="fw-bold">About</h6>
-        </div>
-        <div class="about-img-text-container">
-            <div id="about-image"><img class="rounded-4 shadow" src="img/marvin.png" alt=""></div>
-            <div class="about-details-text">
-                <h3>I'm Marvin</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aperiam iste neque culpa at laudantium
-                    soluta exercitationem ex iusto obcaecati tempora hic, sed unde nisi eaque delectus minus odit rem ratione
-                    rerum autem provident deleniti sapiente! Pariatur id repellat sed.</p>
+    <section id="home" class="container-fluid w-100 px-5 d-flex flex-row justify-content-center min-vh-100">
+        <div class="container-fluid w-100 px-5 d-flex flex-row align-items-center justify-content-between">
+            <div class="home-text fw-bolder w-50 d-flex flex-column">
+                <p>Hi</p>
+                <p>I'm Marvin</p>
+                <p>Web Designer</p>
+            </div>
+            <div class="home-image">
+                <img src="img/blob.png" class="img_1" alt="">
             </div>
         </div>
     </section>
-    <section id="home">
+    <section id="about" class="d-flex flex-column justify-content-center">
+        <div class="container d-flex flex-column gap-5">
+            <div id="about-text">
+                <h6 class="fw-bold text-decoration-underline">About</h6>
+            </div>
+            <div class="about-img-text-container">
+                <div id="about-image"><img class="rounded-4 shadow" src="img/marvin.png" alt=""></div>
+                <div class="about-details-text">
+                    <h3>I'm Marvin</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aperiam iste neque culpa at
+                        laudantium
+                        soluta exercitationem ex iusto obcaecati tempora hic, sed unde nisi eaque delectus minus odit
+                        rem
+                        ratione
+                        rerum autem provident deleniti sapiente! Pariatur id repellat sed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="d-flex flex-column gap-5 min-vh-100 justify-content-center">
+        <div class="skill-text d-flex flex-row w-100 justify-content-center pt-3">
+            <h6 class="fw-bold text-decoration-underline">Skills</h6>
+        </div>
+        <div class="skill-list-container d-flex flex-row align-items-center">
+            <div class="skill-list d-flex flex-column gap-5 w-50 h-100">
+                <div class="skill-paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iure natus. Minus sed quae
+                        delectus voluptas dolorem maxime maiores nesciunt, nulla, mollitia modi fugiat sapiente iure
+                        incidunt inventore quibusdam corrupti.</p>
+                </div>
+                <div class="container d-flex flex-column gap-3">
+                    <div
+                        class="skill-1 w-75 d-flex flex-row align-items-center justify-content-between px-3 py-3 rounded-3 shadow-sm m-0 border">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-filetype-html fs-1 me-3"></i>
+                            <p class="m-0 fw-bold">HTML</p>
+                        </div>
+                        <p class="m-0 fw-bold">90%</p>
+                    </div>
+                    <div
+                        class="skill-1 w-75 d-flex flex-row align-items-center justify-content-between px-3 py-3 rounded-3 shadow-sm m-0 border">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-filetype-js fs-1 me-3"></i>
+                            <p class="m-0 fw-bold">JAVASCRIPT</p>
+                        </div>
+                        <p class="m-0 fw-bold">95%</p>
+                    </div>
+                    <div
+                        class="skill-1 w-75 d-flex flex-row align-items-center justify-content-between px-3 py-3 rounded-3 shadow-sm m-0 border">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-filetype-php fs-1 me-3"></i>
+                            <p class="m-0 fw-bold">PHP</p>
+                        </div>
+                        <p class="m-0 fw-bold">80%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-image w-50 d-flex flex-column h-100 align-items-end">
+                <img class="w-50 rounded-4" src="img/marvin.png" alt="">
+            </div>
+        </div>
 
     </section>
-    <section id="home">
+    <section id="projects">
 
     </section>
-    <section id="home">
-        
+    <section id="contact">
+
     </section>
     <footer>
 
